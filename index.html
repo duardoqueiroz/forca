@@ -1,14 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Hangman</title>
+  </head>
+  <body>
+    <h1>Jogo da forca</h1>
+    <div>
+      <div class="written-letters"></div>
+    </div>
+
+    <div class="main-container">
+      <div>
+        <svg height="250" width="200" class="gallow">
+          <!-- forca -->
+          <line x1="60" y1="20" x2="140" y2="20" />
+          <line x1="140" y1="20" x2="140" y2="50" />
+          <line x1="60" y1="20" x2="60" y2="230" />
+          <line x1="20" y1="230" x2="100" y2="230" />
+
+          <!-- cabeça -->
+          <circle cx="140" cy="70" r="20" class="body-part" />
+          <!-- corpo -->
+          <line x1="140" y1="90" x2="140" y2="150" class="body-part" />
+          <!-- braços -->
+          <line x1="140" y1="120" x2="120" y2="100" class="body-part" />
+          <line x1="140" y1="120" x2="160" y2="100" class="body-part" />
+          <!-- pernas -->
+          <line x1="140" y1="150" x2="120" y2="180" class="body-part" />
+          <line x1="140" y1="150" x2="160" y2="180" class="body-part" />
+        </svg>
+      </div>
+
+      <div class="secret-work"></div>
+    </div>
+
+    <div class="alert"></div>
+  </body>
   <script src="./script.js"></script>
-  <link rel="stylesheet" href="style.css">n
-  <title>Hangman</title>
-</head>
-<body>
-  
-</body>
 </html>
